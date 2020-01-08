@@ -15,6 +15,7 @@ Average Ratio for bad samples: [0.8951194226072755, 0.09114753044779142, 0.01373
 In this order: (yellow, green, brown)
 （standard colors for yellow, green and brown: standard_colors = [np.array([246,202,79]),np.array([60,145,47]),np.array([122,67,54])]_
 Quickly tried training SVM on just the overall ratio of each color in each image. It did not work.
-Looks like it will require a higher level of detail than three numbers for each sample, as seen because neither average
-nor ratios seems to get good results. 
+Looks like it will require a higher level of detail than three numbers for each sample, as seen because  average
+and three basic color ratios seems to get good results. 
+
 
