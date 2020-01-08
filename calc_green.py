@@ -71,7 +71,7 @@ def calculate_green_percentage(pixel_list):
     n = len(pixel_list)
     greens_n = 0
     for pixel in pixel_list:
-        if (pixel[1] - max(pixel)) > -30:
+        if pixel[1] == max(pixel):
             #if green color is close to the most dominant of red, green and blue
             greens_n += 1
     if greens_n:
@@ -87,7 +87,6 @@ for lst in lists:
     percentage_list.append(calculate_green_percentage(lst))
     print("Finished",i,"ratio_list elements")
 
-print(ratio_list)
 good_percent_list = []
 bad_percent_list = []
 for i in range(n):
